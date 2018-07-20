@@ -19,12 +19,26 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  array.sort do |element1, element2|
+  #return_array = []
+  array.sort! do |element1, element2|
     if element1.size > element2.size
       1
     elsif element1.size == element2.size
       0
     elsif element1.size < element2.size
       -1
-  array.sort!
+    end
+  end
+
+end
+
+def swap_elements(array)
+  #create variable to hold 3rd element of array
+  temp = array[2]
+  #set 3rd element to value in 2nd element
+  array[2] = array[1]
+  #Set second element to temp variable (previously the 3rd element's value)
+  array[1] = temp
+  #return the array
+  array
 end
