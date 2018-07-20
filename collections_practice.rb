@@ -65,9 +65,13 @@ def sum_array(array)
 end
 
 def add_s(array)
+  return_array = []
   array.each_with_index do |element, index|
     if index != 1
       element = element + "s"
+      return_array << element
+    else
+
     end
   end
 end
