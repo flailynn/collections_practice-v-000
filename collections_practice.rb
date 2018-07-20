@@ -59,3 +59,7 @@ def find_a(array)
     word.start_with?("a") ? word : false
   end
 end
+
+def sum_array(array)
+  array.sum
+end
