@@ -71,7 +71,7 @@ def add_s(array)
       element = element + "s"
       return_array << element
     else
-
+      return_array << element
     end
   end
 end
